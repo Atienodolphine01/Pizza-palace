@@ -42,8 +42,10 @@ li{
     margin-right: 50px;
 }
 .intro{
-    padding-top: 300px;
+    padding-top: 250px;
     color: orangered;
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 #arrow img{
     margin-left:750px;
@@ -63,6 +65,9 @@ li{
 }
 #choice{
     padding-left: 70px;
+}
+.form2{
+    padding-bottom: 40px;
 }
 input[type=name],input[type=email],#comment{
     background: black;
