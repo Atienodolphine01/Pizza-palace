@@ -8,11 +8,8 @@ An application that helps us to practice on constructions and prototypes.
 ## Author:
 > Dolphine Atieno
 
-## Screenshot:
-<img src="images/shot.png" width="1000">
-
 ## Setup:
-`git clone https://github.com/kamauvick/Pizza-App.git` or download the zip file
+`git clone https://github.com/Atienodolphine01/Pizza-palace.git` or download the zip file
 
 Extract the zip file
 
@@ -38,7 +35,7 @@ Extract the zip file
 | Delivery mode   | `eg No delivery`   |
 
 ## License:
->MIT LICENSE &copy; 2019 Victor
+>MIT LICENSE &copy; 2020 AtyenoD
 
 ## Collaborate:
-To contribute to Pizza pap!, reach me on `waichigovick@gmail.com`.
+To contribute to Pizza Palace, reach me on `awuordolphine65@gmail.com`.
