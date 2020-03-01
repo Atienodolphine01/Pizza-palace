@@ -84,7 +84,7 @@
                   </tr>
                   <tr>
                     <td>Medium</td>
-                    <td>Ksh800</td>
+                    <td>Ksh600</td>
                   </tr>
                   <tr>
                     <td>Small</td>
@@ -100,14 +100,14 @@
                     <div class="col-md-4">
                         <form action="">
                               <label for="choose">Select pizza flavor</label>
-                                <select class="custom-select custom-select-md mb-3 flavour" required>
-                                    <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
-                                    <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
-                                    <option value="Chicken tikka pizza">Chicken tikka pizza</option>
-                                    <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                                <select class="custom-select custom-select-md mb-3" id="flavour" required>
+                                    <option value="raspberry">Raspberry Dessert Pizza</option>
+                                    <option value="bufsticks">Buffalo Chicken Sticks</option>
+                                    <option value="chicken">Chicken tikka pizza</option>
+                                    <option value="periperi">PeriPeri Pizza</option>
                                 </select>  
                               <label for="size">Size</label>
-                                <select class="custom-select custom-select-md mb-3 flavour" required>
+                                <select class="custom-select custom-select-md mb-3" id="size" required>
                                     <option selected value="0">Select size here</option>
                                     <option value="large">Large</option>
                                     <option value="medium">Medium</option>
@@ -120,69 +120,46 @@
                                     <option value="flatbread">FlatBread Crust @ sh. 190</option>
                                 </select>
                              <label for="topping">Choose your prefered topping</label>
-                                <select class="custom-select custom-select-md mb-3" id="" required>
-                                    <option value="onions">onions @ Ksh. 150</option>
+                                <select class="custom-select custom-select-md mb-3" id="topping" required>
+                                    <option value="sausages">sausages @ Ksh. 150</option>
                                     <option value="bacon">bacon @ Ksh. 300</option>
-                                    <option value="tomatoes">sliced tomatoes @ sh. 190</option>
+                                    <option value="tomatoes">sliced tomatoes @ sh. 100</option>
                                     <option value="minced">minced meat @ sh. 300</option>
                                 </select>
                              <label for="number">Number of Pizza's</label>
                                 <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
                                 <br>
-                             <button type="submit" class="btn btn-success" id="checkout">Checkout</button>   
+                                <a href="#sum"><button type="submit" class="btn btn-success checkout" id="checkout">Checkout</button></a>   
                           </form>     
                     </div>
-                    <div class="col-md-6">
-                        <h5 class="text-center">Your total</h5>
-                        <h2 class="text-center sum">Hello, your order is as follow:</h2>
-                        <ol id="list" class="text-center sum"></ol>
+                    <div class="col-md-6" id="totalorder">
+                        <h5 class="text-center" id="sum">Your total</h5>
+                        <p class="text-center sum">Hello, your order is as follow:</p>
+                        <ol id="list" class="text-center "></ol>
                     
                         <div class="data row">
                             <div class="col-sm-4"></div>
-                            <form action="" class="form-group col-sm-6 data">
-                                <input type="text" class="form-control cdata" placeholder="Name:">
+                            <form action="" class="form-group col-sm-6">
+                                <input type="text" class="form-control" id="name" placeholder="Name:">
                                 <br>
-                                <input type="text" class="form-control cdata" placeholder="Phone number: ">
+                                <input type="text" class="form-control"  id="phone" placeholder="Phone number: ">
                                 <br>
-                                <input type="text" class="form-control cdata" placeholder="Location: ">
+                                <input type="text" class="form-control" id="location" placeholder="Location: ">
                                 <br>
                                 <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
                             </form>
-                
-                            <div class="col-sm-4"></div>
                         </div>
+                        <div class="col-sm-4"></div>
                         <div class="d-block mx-auto text-center">
-                            <button class='deliver'>Make Delivery</button>
-                            <button class='delivernot'>Pick Up</button>
+                            <button class='deliver'> Delivery</button>
+                            <button class='pick'>Pick</button>
                         </div>
                     </div> 
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src= "js/jquery-3.4.1.js"></script>
+   <script src= "js/jquery-3.4.1.js"></script>
    <script src="./js/script.js"></script>
 </body>
 </html>
