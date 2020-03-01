@@ -57,7 +57,10 @@ li{
     margin-top: 30px;
     padding-bottom: 30px;
 }
-.order{
-    background-image: url("https://bit.ly/3cjYe7e");
+.overlay2{
+    background-image: url("https://bit.ly/3cl2XFN");
+    background-repeat: no repeat;
+    background-size: cover;
+    height: 600px;
 }
 
