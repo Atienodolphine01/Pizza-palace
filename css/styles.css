@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: orangered; 
+}
+
+.welcome{
+    background-image: url("https://bit.ly/39kneJu");
+    background-repeat: no repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+ .overlay{
+   background: rgba(43, 41, 41, 0.842);
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} 
+
+nav{
+    color: orangered;
+    background-color: transparent;
+}
+
+#pizap{
+    padding-right: 800px;
+}
+
+.nav-items{
+    float: left;
+    
+}
+
+li{
+    display: inline;
+    margin-right: 50px;
+}
+.intro{
+    padding-top: 300px;
+    color: orangered;
+}
+#arrow img{
+    margin-left:750px;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+#menu{
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
