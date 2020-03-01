@@ -68,6 +68,12 @@ input[type=name],input[type=email],#comment{
     background: black;
     color: orangered;
 }
+#least{
+    margin-left: 450px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
 footer{
     background-color: orangered;
     height: 80px;
