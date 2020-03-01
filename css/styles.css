@@ -67,7 +67,7 @@ li{
     padding-left: 70px;
 }
 .form2{
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 input[type=name],input[type=email],#comment{
     background: black;
@@ -81,7 +81,7 @@ input[type=name],input[type=email],#comment{
 }
 footer{
     background-color: orangered;
-    height: 80px;
+    height: 50px;
 }
 .fa {
     padding-top: 80px;
