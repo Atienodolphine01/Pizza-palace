@@ -66,4 +66,9 @@ li{
 #choice{
     padding-left: 70px;
 }
+input[type=name],input[type=email],#comment{
+    background: transparent;
+    color: orangered;
+    
+  }
 
