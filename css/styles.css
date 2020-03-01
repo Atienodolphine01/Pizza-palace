@@ -8,6 +8,7 @@ body {
     padding: 0;
     color: orangered; 
     font-family: 'Chewy', sans-serif;
+    font-size: 20px;
 }
 
 .welcome{
@@ -64,7 +65,7 @@ li{
     padding-left: 70px;
 }
 input[type=name],input[type=email],#comment{
-    background: transparent;
+    background: black;
     color: orangered;
 }
 footer{
