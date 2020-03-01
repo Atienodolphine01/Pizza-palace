@@ -185,31 +185,27 @@ $(function(){
          + newOrder.number + "<br>" + "Total price :  " + newOrder.totalPrice + "<br><br>")
 
     });
-    $(".deliver").click(function(event){
-        event.preventDefault();
-
+    $(".deliver").click(function(){
         $('.sum').slideUp();
         $('#list').slideUp();
         $('.sum').text("Please enter your details").slideDown();
         $('.deliver').hide(1000);
         $('.pick').hide(1000);
         $('.data').slideDown();
-
-        //console.log("Final Bill is: "+deliveryAmount);
-        let person = $("input#name").val();
-        let phone = $("input#phone").val();
-        let location = $("input#location").val();
-
-        if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
-    
-            $("#finallmessage").append(person+", We have recieved your order and " + phone +" it will be delivered to you at "+location);
-            $(".data").show();
-            
-        }
-        else {
-            alert("Please fill in the details for delivery!");
-            $(".data").show();
-            
-        }
     });
+    $(document).ready(function(){
+        $("button#make").click(function(event){
+            // event.preventDefault();
+            let person = $("input#name").val();
+            let phone = $("input#phone").val();
+            let location = $("input#location").val();
+
+            if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+                alert(person+", We have recieved your order and "+phone+" . Your delivery charge is ksh150 plus the total amount of ordered pizza. It will be delivered to you at "+location+ ".  ");
+            }
+            else {
+                alert("Please fill in the details for delivery!");
+            }
+        });
+    });        
 });
