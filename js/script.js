@@ -195,16 +195,14 @@ $(function(){
         $('.pick').hide(1000);
         $('.data').slideDown();
 
-        let checkouttotal= 0
-        let deliveryAmount= checkouttotal;
-        console.log("Final Bill is: "+deliveryAmount);
+        //console.log("Final Bill is: "+deliveryAmount);
         let person = $("input#name").val();
         let phone = $("input#phone").val();
         let location = $("input#location").val();
 
         if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
     
-            $("#finallmessage").append(person+", We have recieved your order and " + phone +" it will be delivered to you at "+location+ ". Prepare sh. "+deliveryAmount);
+            $("#finallmessage").append(person+", We have recieved your order and " + phone +" it will be delivered to you at "+location);
             $(".data").show();
             
         }
