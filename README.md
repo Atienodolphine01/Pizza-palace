@@ -34,6 +34,10 @@ Extract the zip file
 | Number of pizzas   | `eg 6`   |
 | Delivery mode   | `eg No delivery`   |
 
+## BUGS:
+The link on submit button with id 'checkout' does not work properly with h5 element with id 'summ'.
+
+
 ## License:
 >MIT LICENSE &copy; 2020 AtyenoD
 
