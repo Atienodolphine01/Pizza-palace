@@ -2,12 +2,13 @@
 $(function(){
     $('.sum').hide();
     $('.data').hide();
+
     $('#checkout').click(function(){
         let flavour= $('#flavour option:selected').val();
         let size= $('#size option:selected').val();
         let crust= $('#crust option:selected').val();
         let topping= $('#topping option:selected').val();
-        let number= $('#number option:selected').val();
+        let number= $('#number').val();
         //console.log(size);
 
         let order=(flavour,size,crust,topping,number,total)=> {
@@ -16,9 +17,9 @@ $(function(){
 
         let price, totalPrice;
             switch(flavour){
-              case flavour="raspberry":
+              case flavour= "raspberry":
                   switch(size){
-                    case size="large":
+                    case size= "large":
                         price= 1200;
                         if (crust==="thin"){
                             totalPrice = (price * number)+ 150;
@@ -123,7 +124,7 @@ $(function(){
                         price= 1200;
                           if (crust==="thin"){
                               totalPrice = (price * number)+ 150;
-                          } else if(crust==="thick"){
+                                      } else if(crust==="thick"){
                               totalPrice = (price * number)+ 200;
                           } else if(crust==="flatbread"){
                               totalPrice = (price * number)+ 190;
@@ -182,7 +183,7 @@ $(function(){
         $('#list').text(" ");
         $('#list').append("<br>" + "Flavour :  " + newOrder.flavour + "<br>" + "Size :  " + newOrder.size + "<br>"
          + "Crust :  " + newOrder.crust + "<br>" + "Topping :  " + newOrder.topping + "<br>" + "Number :  "
-         + newOrder.number + "<br>" + "Total price :  " + newOrder.totalPrice + "<br><br>")
+         + newOrder.number + "<br>" + "Total price :  " + newOrder.total + "<br><br>").css('color', 'black').css('font-size', '24px');
 
     });
     $(".deliver").click(function(){
